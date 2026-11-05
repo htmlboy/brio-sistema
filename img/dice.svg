@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <title>Dados de 6 caras — tinta negra con puntos en transparente</title>
+  <defs>
+    <!-- Tamaño base del dado: 100x100. Los círculos negros en la máscara "abren" huecos transparentes. -->
+    <g id="die-base">
+      <rect x="0" y="0" width="100" height="100" rx="14" ry="14" />
+    </g>
+
+    <!-- Posiciones de puntos -->
+    <g id="pip-center"><circle cx="50" cy="50" r="7"/></g>
+
+    <g id="pip-tl"><circle cx="28" cy="28" r="7"/></g>
+    <g id="pip-tr"><circle cx="72" cy="28" r="7"/></g>
+    <g id="pip-bl"><circle cx="28" cy="72" r="7"/></g>
+    <g id="pip-br"><circle cx="72" cy="72" r="7"/></g>
+
+    <g id="pip-ml"><circle cx="28" cy="50" r="7"/></g>
+    <g id="pip-mr"><circle cx="72" cy="50" r="7"/></g>
+
+    <!-- Máscaras por cara (blanco=opaco, negro=transparente) -->
+    <mask id="mask-1" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-center" fill="black"/>
+    </mask>
+
+    <mask id="mask-2" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-tl" fill="black"/><use href="#pip-br" fill="black"/>
+    </mask>
+
+    <mask id="mask-3" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-tl" fill="black"/><use href="#pip-center" fill="black"/><use href="#pip-br" fill="black"/>
+    </mask>
+
+    <mask id="mask-4" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-tl" fill="black"/><use href="#pip-tr" fill="black"/>
+      <use href="#pip-bl" fill="black"/><use href="#pip-br" fill="black"/>
+    </mask>
+
+    <mask id="mask-5" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-tl" fill="black"/><use href="#pip-tr" fill="black"/>
+      <use href="#pip-center" fill="black"/>
+      <use href="#pip-bl" fill="black"/><use href="#pip-br" fill="black"/>
+    </mask>
+
+    <mask id="mask-6" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <use href="#pip-tl" fill="black"/><use href="#pip-tr" fill="black"/>
+      <use href="#pip-ml" fill="black"/><use href="#pip-mr" fill="black"/>
+      <use href="#pip-bl" fill="black"/><use href="#pip-br" fill="black"/>
+    </mask>
+
+    <!-- Sombra opcional en una tinta: se omite para mantener 100% negro + transparencias -->
+  
+  <style>
+  .muted { fill: rgba(255,255,255,0.2); }
+  </style>
+  
+  </defs>
+
+  <!-- Fondo transparente: el “blanco” de los puntos será transparente -->
+
+  <!-- Dado 1 (5) -->
+  <g transform="translate(90,120) rotate(-12)">
+    <use href="#die-base" class="muted" mask="url(#mask-5)"/>
+  </g>
+
+  <!-- Dado 2 (2) -->
+  <g transform="translate(240,70) rotate(18)">
+    <use href="#die-base" class="muted" mask="url(#mask-2)"/>
+  </g>
+
+  <!-- Dado 3 (6) -->
+  <g transform="translate(395,135) rotate(-6)">
+    <use href="#die-base" class="muted" mask="url(#mask-6)"/>
+  </g>
+
+  <!-- Dado 4 (1) -->
+  <g transform="translate(560,90) rotate(27)">
+    <use href="#die-base" class="muted" mask="url(#mask-1)"/>
+  </g>
+
+  <!-- Dado 5 (3) -->
+  <g transform="translate(140,300) rotate(9)">
+    <use href="#die-base" class="muted" mask="url(#mask-3)"/>
+  </g>
+
+  <!-- Dado 6 (4) -->
+  <g transform="translate(320,315) rotate(-22)">
+    <use href="#die-base" class="muted" mask="url(#mask-4)"/>
+  </g>
+
+  <!-- Dado 7 (2) -->
+  <g transform="translate(515,300) rotate(4)">
+    <use href="#die-base" class="muted" mask="url(#mask-2)"/>
+  </g>
+
+  <!-- Dado 8 (5) -->
+  <g transform="translate(700,210) rotate(-15)">
+    <use href="#die-base" class="muted" mask="url(#mask-5)"/>
+  </g>
+
+  <!-- Dado 9 (6) -->
+  <g transform="translate(680,380) rotate(11)">
+    <use href="#die-base" class="muted" mask="url(#mask-6)"/>
+  </g>
+</svg>
