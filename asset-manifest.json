@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.953df360.css",
-    "main.js": "/static/js/main.6af074b1.js",
+    "main.css": "/static/css/main.426af7b0.css",
+    "main.js": "/static/js/main.df9f1ac8.js",
     "static/media/IBMPlexSans-Variable.ttf": "/static/media/IBMPlexSans-Variable.75112ac7dc65eff2be50.ttf",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.953df360.css",
-    "static/js/main.6af074b1.js"
+    "static/css/main.426af7b0.css",
+    "static/js/main.df9f1ac8.js"
   ]
 }
