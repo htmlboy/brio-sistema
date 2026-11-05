@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd9a25a7.css",
-    "main.js": "/static/js/main.e828aaa9.js",
+    "main.css": "/static/css/main.aa8d67cb.css",
+    "main.js": "/static/js/main.42fe9759.js",
+    "static/media/IBMPlexSans-Variable.ttf": "/static/media/IBMPlexSans-Variable.75112ac7dc65eff2be50.ttf",
+    "static/media/BarlowCondensed-Bold.ttf": "/static/media/BarlowCondensed-Bold.b3c6cf3ef9b13102adde.ttf",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.bd9a25a7.css",
-    "static/js/main.e828aaa9.js"
+    "static/css/main.aa8d67cb.css",
+    "static/js/main.42fe9759.js"
   ]
 }
