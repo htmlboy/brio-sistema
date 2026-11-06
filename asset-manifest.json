@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.426af7b0.css",
+    "main.css": "/static/css/main.84d8edc0.css",
     "main.js": "/static/js/main.df9f1ac8.js",
     "static/media/IBMPlexSans-Variable.ttf": "/static/media/IBMPlexSans-Variable.75112ac7dc65eff2be50.ttf",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.426af7b0.css",
+    "static/css/main.84d8edc0.css",
     "static/js/main.df9f1ac8.js"
   ]
 }
