@@ -27,6 +27,8 @@ jobs:
         working-directory: rules-source
       - run: npx playwright install --with-deps chromium
         working-directory: rules-source
+      - run: npm test
+        working-directory: rules-source
       - run: npm run build
         working-directory: rules-source
       - uses: actions/configure-pages@v5
