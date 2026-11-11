@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "current": "1.0",
+  "preview": "2.0",
+  "editions": [
+    {"id": "1.0", "title": "Brío 1.0", "status": "legacy", "source": "editions/1.0/rules.html"},
+    {"id": "2.0", "title": "Brío 2.0", "status": "review", "source": "editions/2.0/rules.html"}
+  ]
+}

@@ -1,4 +1,4 @@
-name: Publish site
+name: Publish site and canonical rules
 on:
   push:
     branches: [main]
@@ -18,9 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: rules-source/package-lock.json
+      - run: npm ci
+        working-directory: rules-source
+      - run: npx playwright install --with-deps chromium
+        working-directory: rules-source
+      - run: npm run build
+        working-directory: rules-source
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - uses: actions/deploy-pages@v4
         id: deploy

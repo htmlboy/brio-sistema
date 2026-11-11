@@ -1,0 +1,1 @@
+{"name":"brio-canonical-rules","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"build":"node tools/build.mjs","test":"node --test tools/*.test.mjs"},"devDependencies":{"playwright":"1.62.1"}}
