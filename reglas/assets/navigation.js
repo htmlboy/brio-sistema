@@ -7,5 +7,5 @@ document.addEventListener('click', event => {
   if (url.origin !== location.origin || !/^\/reglas\/?$/.test(url.pathname)) return;
   event.preventDefault();
   event.stopImmediatePropagation();
-  location.assign('/reglas/2.0/' + url.search + url.hash);
+  location.assign('/reglas/' + url.search + url.hash);
 }, true);

@@ -7,7 +7,7 @@ export async function verifyArtifact(directory) {
   if (manifest.schemaVersion !== 2 || manifest.current !== '2.0' || !/^[a-f0-9]{40}$/.test(manifest.revision)) throw new Error('Invalid rules artifact provenance');
   const hash = data => createHash('sha256').update(data).digest('hex');
   if (hash(JSON.stringify(manifest.inputs)) !== manifest.sourceSha256) throw new Error('Invalid source digest');
-  for (const name of ['reglas/index.html', 'reglas/2.0/index.html', 'descargas/brio-2.0.pdf', 'descargas/Brio_Reglas_Rapidas.pdf']) {
+  for (const name of ['reglas/index.html', 'reglas/2.0/index.html', 'descargas/brio-2.0.pdf', 'descargas/Brio_Reglas_Rapidas.pdf', 'reglas/hoja-de-personaje/index.html', 'descargas/Brio_Hoja_PJ.pdf']) {
     if (!manifest.files[name]) throw new Error('Missing required artifact: ' + name);
   }
   for (const [name, expected] of Object.entries(manifest.files)) {
@@ -22,7 +22,7 @@ export async function verifyArtifact(directory) {
     }
   }
   await checkFiles('reglas');
-  for (const name of ['reglas/index.html', 'reglas/2.0/index.html']) {
+  for (const name of ['reglas/index.html', 'reglas/hoja-de-personaje/index.html']) {
     const html = await readFile(path.join(directory, name), 'utf8');
     if (!html.includes(`name="rules-revision" content="${manifest.revision}"`) || !html.includes(`name="rules-source-sha256" content="${manifest.sourceSha256}"`)) throw new Error('HTML provenance mismatch');
   }
