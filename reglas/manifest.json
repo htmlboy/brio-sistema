@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "current": "2.0",
   "sourceRepository": "htmlboy/brio-source",
-  "revision": "5082eea9654ed6c435d722ffe8aac03aa1924074",
-  "sourceSha256": "a376d71411d19f60b6ebf8af69102860db56234cc3d38d30d259cf03778cbb19",
+  "revision": "7d42b4baa934c0caa6e87a27171c92dde8c4c939",
+  "sourceSha256": "6df65376b5c94c775ac1dc3d7194f9f0a6ac322cca468990d0999a120a17b218",
   "inputs": {
     "manifest.json": "90eab5d8e678aa4a28d0e4b7598f39bb8abe8330e1f91e98dd151b21c11dddd8",
     "package.json": "4462143f9832dd7d5f5c6afbc1b08629b1aa2805db5f15142e1df0bde76f60a0",
@@ -13,13 +13,19 @@
     "assets/IBMPlexSans-OFL.txt": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
     "assets/IBMPlexSans-Variable.ttf": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
     "assets/navigation.js": "311d5a9282d766c5f3bab908546b9cc48a976557febc400c178e1c05480049a9",
-    "assets/rules.css": "6d2c3c062c02afc314341be31763e5b52f7a2a0cf88df512c0ac4fa0731101ac",
+    "assets/online-viewer.css": "71151df618e1728c6f2a1c2105ee4cf5edbd1e062f90503a0c6c74bfc1f34928",
+    "assets/online-viewer.js": "71cc64050f2692ccdcd5fb3203b9f8050ace55401af8497b5e50b2b1010f5b08",
+    "assets/rules.css": "7d5467cfac25f5a7b21440f64b50825c6ab1e91e9c41e6960f0c4653729cb7bb",
+    "assets/web.css": "79c54e5aeeec42faa5586c562c46f106e2d62ddf14f195e3f9080b2b99bd7b75",
     "editions/2.0/rules.html": "6485296fb51432b4415087d981d173095b6162e662b08bc404e46b583155b105",
     "tools/artifact.mjs": "3e75ccb10e9e3d173958debff86ee89156cbe01844483636e1f3d0f8e9334e57",
-    "tools/build.mjs": "6a2b112b60059b961bcd81795d596120bc5a32e0c9696ae5a4ec74298041a1e8",
+    "tools/build.mjs": "95986cb5e114b7769b0121477a4a088856f76b09fd1cdbe9a9927a72dbb55435",
+    "tools/page.mjs": "b951cc01ea55d4c48ffbab45aca96113035c4af252ecbe233932ff006c2984c1",
     "tools/rules.test.mjs": "afd4863967f03e0891c7021be1d64a9236f816bc049a3eeb6cf576f5d62fc044",
+    "tools/stage-online.mjs": "d2a2265819e9d39094912e16b9371a5943383b541dc941c12b6d705de599b86a",
     "tools/stage.mjs": "09c8fc9e55f36ec57705989174340339378f873ca21732db1dcab75521c8c287",
-    "tools/verify.mjs": "abb2c8fd128dd2e9cf38bb8f476318013259967838aad32bffad01bfe86d20b6"
+    "tools/verify.mjs": "abb2c8fd128dd2e9cf38bb8f476318013259967838aad32bffad01bfe86d20b6",
+    "tools/viewer.test.mjs": "0831bc611d44a188eec05e67a0f6efe70aebd6ffd7f9a2f7680df1d21a78d692"
   },
   "editions": [
     {
@@ -32,16 +38,19 @@
     }
   ],
   "files": {
-    "descargas/Brio_Reglas_Rapidas.pdf": "09164e4f20f856d227910aee1c04326fae15e39259f85cf9803806e77ebaf52c",
-    "descargas/brio-2.0.pdf": "09164e4f20f856d227910aee1c04326fae15e39259f85cf9803806e77ebaf52c",
+    "descargas/Brio_Reglas_Rapidas.pdf": "8f7d83e565d4f5c2351de1540ac23167b8d36ffa89cc10e2a925c62feeb302a8",
+    "descargas/brio-2.0.pdf": "8f7d83e565d4f5c2351de1540ac23167b8d36ffa89cc10e2a925c62feeb302a8",
     "reglas/1.0/index.html": "45d8ca4b73c07ed854c08bbd30a6e0a3e428515d4260e379e61f9f75437dc2ac",
-    "reglas/2.0/index.html": "cdc843e532e2dfc8d86675694a36ca4034973956ca2ee19275314a2fdc953f27",
+    "reglas/2.0/index.html": "a874e69925a1619bb648c8f83b06d1bfa9ca34eb61ab943deff4822d5b9eb81e",
     "reglas/assets/brio-sistema.svg": "8bfb2e23ee1566b52930a0f5a6c384d76a37fb961898c2a490a07bcb5460b9f8",
     "reglas/assets/embed.js": "17ddc0f23f71399d5815f046899a7352163cb4940207ec21464d6d12a9f0a270",
     "reglas/assets/IBMPlexSans-OFL.txt": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
     "reglas/assets/IBMPlexSans-Variable.ttf": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
     "reglas/assets/navigation.js": "311d5a9282d766c5f3bab908546b9cc48a976557febc400c178e1c05480049a9",
-    "reglas/assets/rules.css": "6d2c3c062c02afc314341be31763e5b52f7a2a0cf88df512c0ac4fa0731101ac",
-    "reglas/index.html": "e8bd7f02cf842bca284a5b54d4f2f096c6d5d914e08a5c8ab638e8b0c3b6ce18"
+    "reglas/assets/online-viewer.css": "71151df618e1728c6f2a1c2105ee4cf5edbd1e062f90503a0c6c74bfc1f34928",
+    "reglas/assets/online-viewer.js": "71cc64050f2692ccdcd5fb3203b9f8050ace55401af8497b5e50b2b1010f5b08",
+    "reglas/assets/rules.css": "7d5467cfac25f5a7b21440f64b50825c6ab1e91e9c41e6960f0c4653729cb7bb",
+    "reglas/assets/web.css": "79c54e5aeeec42faa5586c562c46f106e2d62ddf14f195e3f9080b2b99bd7b75",
+    "reglas/index.html": "339dcdbf3f5fbcd8566ee7aef6798223f535c3ba8348fd1ab8fd7aaf09222b72"
   }
 }
