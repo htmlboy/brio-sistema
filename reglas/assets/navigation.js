@@ -9,3 +9,13 @@ document.addEventListener('click', event => {
   event.stopImmediatePropagation();
   location.assign('/reglas/' + url.search + url.hash);
 }, true);
+
+// Native navigation for the generated home/materials shells.
+document.documentElement.classList.add('js-enabled');
+const toggle = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.nav-menu');
+if (toggle && menu) toggle.addEventListener('click', () => {
+  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+  toggle.setAttribute('aria-expanded', String(!expanded));
+  menu.classList.toggle('active', !expanded);
+});

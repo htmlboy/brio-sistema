@@ -11,7 +11,7 @@ export async function verifyArtifact(directory) {
     if (!manifest.files[name]) throw new Error('Missing required artifact: ' + name);
   }
   for (const [name, expected] of Object.entries(manifest.files)) {
-    if (!/^(reglas|descargas)\//.test(name) || name.split('/').includes('..') || name.includes('\\')) throw new Error('Invalid artifact path');
+    if (!/^(reglas\/|descargas\/|index\.html$|materiales\/index\.html$|jugar-en-persona\/index\.html$)/.test(name) || name.split('/').includes('..') || name.includes('\\')) throw new Error('Invalid artifact path');
     if (hash(await readFile(path.join(directory, name))) !== expected) throw new Error('Artifact checksum mismatch: ' + name);
   }
   async function checkFiles(relative) {
