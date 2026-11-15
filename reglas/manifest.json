@@ -2,15 +2,15 @@
   "schemaVersion": 2,
   "current": "2.0",
   "sourceRepository": "htmlboy/brio-source",
-  "revision": "46084131ed76eb9a8cacc44d45d81c05353d96c8",
-  "sourceSha256": "9e373b4bb43a78785c0fdbcb0ede407f2a3213c0e26e28ffcc0cd301c5a75c5e",
+  "revision": "5082eea9654ed6c435d722ffe8aac03aa1924074",
+  "sourceSha256": "a376d71411d19f60b6ebf8af69102860db56234cc3d38d30d259cf03778cbb19",
   "inputs": {
     "manifest.json": "90eab5d8e678aa4a28d0e4b7598f39bb8abe8330e1f91e98dd151b21c11dddd8",
     "package.json": "4462143f9832dd7d5f5c6afbc1b08629b1aa2805db5f15142e1df0bde76f60a0",
     "package-lock.json": "70aa2db38acbd48e45641fa4fbc949d13732093066812477c67d92d9745395ff",
     "assets/brio-sistema.svg": "8bfb2e23ee1566b52930a0f5a6c384d76a37fb961898c2a490a07bcb5460b9f8",
     "assets/embed.js": "17ddc0f23f71399d5815f046899a7352163cb4940207ec21464d6d12a9f0a270",
-    "assets/IBMPlexSans-OFL.txt": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "assets/IBMPlexSans-OFL.txt": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
     "assets/IBMPlexSans-Variable.ttf": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
     "assets/navigation.js": "311d5a9282d766c5f3bab908546b9cc48a976557febc400c178e1c05480049a9",
     "assets/rules.css": "6d2c3c062c02afc314341be31763e5b52f7a2a0cf88df512c0ac4fa0731101ac",
@@ -32,16 +32,16 @@
     }
   ],
   "files": {
-    "descargas/Brio_Reglas_Rapidas.pdf": "250e0d691aa27c977b05a7debf63a22efe6e2e0b95a21a25dc86fc8c84084eb0",
-    "descargas/brio-2.0.pdf": "250e0d691aa27c977b05a7debf63a22efe6e2e0b95a21a25dc86fc8c84084eb0",
+    "descargas/Brio_Reglas_Rapidas.pdf": "09164e4f20f856d227910aee1c04326fae15e39259f85cf9803806e77ebaf52c",
+    "descargas/brio-2.0.pdf": "09164e4f20f856d227910aee1c04326fae15e39259f85cf9803806e77ebaf52c",
     "reglas/1.0/index.html": "45d8ca4b73c07ed854c08bbd30a6e0a3e428515d4260e379e61f9f75437dc2ac",
-    "reglas/2.0/index.html": "2c12bf5a497224dafc20cdfb96e55367b5beb293871017c801d7306cc647192b",
+    "reglas/2.0/index.html": "cdc843e532e2dfc8d86675694a36ca4034973956ca2ee19275314a2fdc953f27",
     "reglas/assets/brio-sistema.svg": "8bfb2e23ee1566b52930a0f5a6c384d76a37fb961898c2a490a07bcb5460b9f8",
     "reglas/assets/embed.js": "17ddc0f23f71399d5815f046899a7352163cb4940207ec21464d6d12a9f0a270",
-    "reglas/assets/IBMPlexSans-OFL.txt": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "reglas/assets/IBMPlexSans-OFL.txt": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
     "reglas/assets/IBMPlexSans-Variable.ttf": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
     "reglas/assets/navigation.js": "311d5a9282d766c5f3bab908546b9cc48a976557febc400c178e1c05480049a9",
     "reglas/assets/rules.css": "6d2c3c062c02afc314341be31763e5b52f7a2a0cf88df512c0ac4fa0731101ac",
-    "reglas/index.html": "3a66e3ac375b6025b52114112ce288e057a7b4456706c5cafe729e15e3b2bf64"
+    "reglas/index.html": "e8bd7f02cf842bca284a5b54d4f2f096c6d5d914e08a5c8ab638e8b0c3b6ce18"
   }
 }
