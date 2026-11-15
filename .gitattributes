@@ -1,0 +1,3 @@
+# Generated files are checksummed as bytes; never convert line endings.
+/reglas/** -text
+/descargas/*.pdf -text
