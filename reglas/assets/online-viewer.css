@@ -1,0 +1,5 @@
+.rules[data-canonical-rules="2.0"] > :not(.canonical-rules-viewer) { display: none !important; }
+.canonical-rules-viewer { width: 100%; min-width: 0; }
+.canonical-rules-viewer > a { display: inline-block; margin-bottom: .75rem; color: var(--accent, #a33222); }
+.canonical-rules-viewer .canonical-rules-note { font-size: .85rem; margin: 0 0 1rem; }
+.canonical-rules-viewer > iframe { display: block; width: 100%; height: 70vh; height: 70dvh; min-height: 20rem; border: 0; }
